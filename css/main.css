@@ -1,0 +1,25 @@
+body{
+    overflow: hidden;
+}
+.nav-header {
+    transition: all 0.7s;
+}
+.open-icon{
+    cursor: pointer;
+}
+.meal{
+    cursor: pointer;
+}
+.layer{
+    background-color: hsla(0, 0%, 100%, 0.69);
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    transition: 0.7s;
+}
+.meal:hover .layer{
+    top: 0;
+}
+.loading-screen{
+    display: flex;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="imgs/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yummy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-black">
+    <div class="loading-screen  position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center" style="z-index: 99999;">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <nav class="min-vh-100 position-fixed d-flex top-0 " style="z-index: 99;">
+        <div class="open bg-black position-relative p-4 d-flex flex-column justify-content-between">
+            <ul class="pt-3 list-unstyled overflow-hidden links">
+                    <li onclick="displaySearch()" class="pb-2 fs-6 position-relative"><a class="text-decoration-none text-white" href="#Search">Search</a></li>
+                    <li onclick="showCategories()" class="py-2 fs-6 position-relative"><a class="text-decoration-none text-white " href="#Categories">Categories</a></li>
+                    <li onclick="showArea()" class="py-2 fs-6 position-relative"><a class="text-decoration-none text-white " href="#Area">Area</a></li>
+                    <li onclick="showIngredients()" class="py-2 fs-6 position-relative"><a class="text-decoration-none text-white " href="#Ingredients">Ingredients</a></li>
+                    <li onclick="displayContact()" class="py-2 fs-6 position-relative"><a class="text-decoration-none text-white " href="#Contact Us">Contact Us</a></li>
+            </ul>
+                <div class="text-white nav-footer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter px-2"></i>
+                    <i class="fa-brands fa-chrome"></i><br>
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+        </div>
+        <div class="nav-header position-relative bg-white text-black d-flex flex-column justify-content-between py-4 text-center px-2" style="width: 70px;">
+                <img src="imgs/logo.png" width="100%">
+                <i class="fa-solid fa-bars fs-1 open-icon"></i>
+                <div>
+                    <i class="fa-brands fa-chrome d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+        </div>
+    </nav>
+    <section class="container" id="searchData">
+    </section>
+    <section>        
+        <div class="container py-2">
+            <div class="row gy-4 py-5" id="showData">
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
